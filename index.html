@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Sense</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JavaScript -->
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Technical Sense</div>
+    <div class="auth-bar">
+      <a href="#" id="login-btn">Login</a>
+      <a href="#" id="signup-btn">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- HERO / INTRO -->
+  <header class="hero">
+    <h1>Stay Ahead in Tech</h1>
+    <p>Explore the innovations shaping our world—from AI breakthroughs to cutting-edge hardware, software, and cybersecurity. Stay informed, stay inspired, and lead the future of technology.</p>
+  </header>
+
+  <!-- CATEGORY GRID -->
+  <section class="categories">
+    <div class="category">
+      <h3>Software</h3>
+      <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Software" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>AI Tools</h3>
+      <img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg" alt="AI Tools" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Cybersecurity</h3>
+      <img src="https://images.pexels.com/photos/5380614/pexels-photo-5380614.jpeg" alt="Cybersecurity" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Mobile Tech</h3>
+      <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="Mobile Tech" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Hardware</h3>
+      <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg" alt="Hardware" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Tech News</h3>
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Tech News" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Programming</h3>
+      <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" alt="Programming" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Gadgets</h3>
+      <img src="https://images.pexels.com/photos/5077040/pexels-photo-5077040.jpeg" alt="Gadgets" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>AI Research</h3>
+      <img src="https://images.pexels.com/photos/1181245/pexels-photo-1181245.jpeg" alt="AI Research" loading="lazy">
+    </div>
+    <div class="category">
+      <h3>Startups</h3>
+      <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Startups" loading="lazy">
+    </div>
+  </section>
+
+  <!-- AUTH MODAL -->
+  <div class="modal" id="auth-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <h2 id="modal-title">Login</h2>
+      <form id="auth-form">
+        <label for="auth-email">Email</label>
+        <input type="email" id="auth-email" required />
+
+        <label for="auth-password">Password</label>
+        <input type="password" id="auth-password" minlength="6" required />
+
+        <p id="auth-message" class="auth-message"></p>
+        <button type="submit" id="auth-submit">Login</button>
+      </form>
+      <button id="auth-switch" class="auth-switch">Switch to Sign Up</button>
+    </div>
+  </div>
+
+  <!-- ARTICLE READER MODAL -->
+  <div class="modal" id="reader-modal" aria-hidden="true">
+    <div class="modal-content reader-content">
+      <button id="reader-close" class="modal-close" aria-label="Close">&times;</button>
+      <img id="reader-thumb" class="reader-thumb" alt="Article Thumbnail" style="display:none;" />
+      <h2 id="reader-title"></h2>
+      <div id="reader-content"></div>
+    </div>
+  </div>
+
+  <!-- ARTICLE POPUP -->
+  <div id="article-popup" class="article-popup" aria-hidden="true">
+    <div class="article-popup-content">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <h2 id="popup-title"></h2>
+      <img id="popup-img" src="" alt="Article Image" />
+      <p id="popup-text"></p>
+    </div>
+  </div>
+</body>
+</html>
